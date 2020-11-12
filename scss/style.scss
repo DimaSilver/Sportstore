@@ -147,7 +147,7 @@
     margin-top: -105px;
   }
   &-bottom__btn{
-    margin-top: 40    px;
+    margin-top: 40px;
   }
 }
 .menu{
@@ -170,8 +170,47 @@
 .logo{
   padding: 23px 26px 23px 20px;
 }
-
-
 /*end header*/
+
+/*start benefits*/
+.benefits{
+  &__inner{
+    display: flex;
+  }
+  &__item{
+    width: 375px;
+    border-left: 1px solid rgba(#000, .22);
+    text-align: center;
+    padding: 79px 70px 59px;
+    &:first-child{
+      border-left: none;
+    }
+  }
+  &__item-img{
+    margin-bottom: 45px;
+  }
+  &__item-title{
+    @extend %bebasBold-regular;
+    font-size: 33px;
+    line-height: 35px;
+    margin: 0;
+    color: #0d2e57;
+  }
+  &__item-text{
+    line-height: 20px;
+  }
+  &__item-link{
+    @extend %montserrat-semibold;
+    color: #3753da;
+    margin-top: 10px;
+    transition: all .3s;
+    &:hover{
+      color: #8a2be4;
+    }
+  }
+}
+/*end benefits*/
+
+
 
 @import "media";
