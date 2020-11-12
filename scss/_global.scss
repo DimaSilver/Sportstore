@@ -23,3 +23,23 @@ a{
   display: inline-block;
   color: inherit;
 }
+body{
+  color: #8a8a8a;
+  background-color: #fff;
+  @extend %montserrat-light;
+  font-size: 13px;
+  line-height: 15px;
+}
+.container{
+  max-width: 1530px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn{
+  padding: 15px 26px 14px 27px;
+  background-color: #3954d9;
+  border-radius: 23px;
+  @extend %montserrat-regular;
+  font-size: 17px;
+  line-height: 20px;
+}
