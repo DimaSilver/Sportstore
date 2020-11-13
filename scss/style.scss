@@ -148,6 +148,8 @@
   }
   &-bottom__btn{
     margin-top: 40px;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 .menu{
@@ -196,9 +198,6 @@
     margin: 0;
     color: #0d2e57;
   }
-  &__item-text{
-    line-height: 20px;
-  }
   &__item-link{
     @extend %montserrat-semibold;
     color: #3753da;
@@ -211,6 +210,117 @@
 }
 /*end benefits*/
 
-
-
+/*start best-offer*/
+.best-offer{
+  background-color: #f2f0f0;
+  &__inner{
+    display: flex;
+  }
+  &__info{
+    text-align: center;
+    max-width: 750px;
+    padding: 100px 130px 70px 100px;
+  }
+  &__info-descr{
+    @extend %poppins-semibold;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #616161;
+    margin-bottom: 25px;
+  }
+  &__info-title{
+    text-transform: uppercase;
+    @extend %bebasBold-regular;
+    font-size: 43px;
+    line-height: 45px;
+    margin: 0;
+    color: #0d2e57;
+  }
+  &__info-text{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__info-prices,
+  &__info-time{
+    max-width: 315px;
+  }
+  &__info-prices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto 0;
+  }
+  &__info-prices__new{
+    @extend %montserrat-bold;
+    font-size: 52px;
+    line-height: 55px;
+  }
+  &__info-prices__old{
+    @extend %montserrat-medium;
+    font-size: 33px;
+    line-height: 36px;
+    color: #121212;
+    margin-top: 5px;
+    &::before{
+      width: 100%;
+      height: 2px;
+      background-color: #3b3b3b;
+      top: 50%;
+    }
+  }
+  &__info-time{
+    display: flex;
+    justify-content: space-between;
+    margin: 55px auto 42px;
+  }
+  &__info-time__block{
+    width: 90px;
+    height: 105px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 22px 21px 19px;
+    text-align: center;
+    &:nth-child(2){
+      padding-left: 17px;
+      padding-right: 16px;
+    }
+    &:nth-child(3){
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+  &__info-time__block-number,
+  &__info-time__block-label{
+    @extend %montserrat-semibold;
+    color: #2d2b27;
+    margin: 3px 0 0;
+  }
+  &__info-time__block-number{
+    font-size: 38px;
+    line-height: 32px;
+    margin: 0 0 -4px;
+  }
+  &__info-time__block-dots{
+    @extend %montserrat-regular;
+    font-size: 15px;
+    line-height: 17px;
+    color: #121212;
+  }
+  &__info-time__block-label{
+    text-transform: uppercase;
+  }
+  &__img{
+    max-width: 750px;
+    max-height: 750px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    img{
+      margin: -65px 0 0 -55px;
+    }
+  }
+}
+/*end best-offer*/
 @import "media";
