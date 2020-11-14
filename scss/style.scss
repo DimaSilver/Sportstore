@@ -437,8 +437,49 @@
 }
 /*end products*/
 
-
-
-
+/*start gallery*/
+.gallery{
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 375px;
+    height: 375px;
+    overflow: hidden;
+    position: relative;
+    img{
+      margin: 0 0 0 -30px;
+    }
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5){
+      img{
+        margin: 0 0 0 -80px;
+      }
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      background-color: rgba(#000, .56);
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      transition: opacity ease-in-out .3s;
+    }
+    &:hover{
+      &::before{
+        transition: opacity ease-in-out .3s;
+        opacity: 0;
+        position: absolute;
+        content: "";
+        background-color: rgba(#000, .56);
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+/*end gallery*/
 
 @import "media";
