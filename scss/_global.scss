@@ -46,6 +46,12 @@ body{
     background-color: #440097;
   }
 }
+.link{
+  transition: all .3s;
+  &:hover{
+    color: #8a2be4;
+  }
+}
 .page-section{
   box-shadow: 0 0 62px rgba(12,12,12,.13);
   background-color: #fff;
