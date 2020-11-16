@@ -173,7 +173,9 @@
   padding: 23px 26px 23px 20px;
 }
 /*end header*/
-
+.menu.header-top__section.mobile-version{
+  display: none;
+}
 /*start benefits*/
 .benefits{
   &__inner{
