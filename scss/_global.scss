@@ -42,6 +42,7 @@ body{
   @extend %montserrat-regular;
   color: #fff;
   transition: all .3s;
+  letter-spacing: .6px;
   &:hover{
     background-color: #440097;
   }
@@ -57,6 +58,7 @@ body{
   background-color: #fff;
   position: relative;
   margin-top: -73px;
+  margin-bottom: -87px;
 }
 .text{
   line-height: 20px;
