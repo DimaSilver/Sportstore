@@ -119,6 +119,27 @@
     padding: 29px 8px 30px;
   }
 }
+@media(max-width: 1200px){
+  .footer-top {
+    padding: 100px 0 40px;
+  }
+  .footer-top__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top__block{
+    text-align: center;
+  }
+  .footer-top__block-list {
+    margin-top: 20px;
+  }
+  .footer-top__block-down {
+    margin-top: 30px;
+  }
+  .footer-top__block-down__form{
+    align-items: center;
+  }
+}
 @media(max-width: 1190px){
   .header-bottom {
     background-position: left -160px center;
@@ -364,10 +385,42 @@
       display: none;
     }
   }
+  .footer-top__block-title {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .footer-top__block-item {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .footer__social-item + .footer__social-item {
+    margin-left: 20px;
+  }
+  .footer-bottom {
+    padding: 30px 0 100px;
+  }
 }
 @media(max-width: 750px){
   .benefits__item {
     padding: 20px;
+  }
+  .footer-top__inner {
+    padding: 0 25px;
+  }
+}
+@media(max-width: 650px){
+  .footer-top__block-title {
+    font-size: 21px;
+    line-height: 23px;
+  }
+  .footer-top__block-down__form-btn {
+    margin-top: 10px;
+  }
+  .footer-top {
+    padding: 90px 0 40px;
+  }
+  .footer__social-item + .footer__social-item {
+    margin-left: 10px;
   }
 }
 @media(max-width: 620px){
@@ -453,6 +506,10 @@
     line-height: 19px;
     margin-bottom: 10px;
   }
+  .footer__social-link {
+    width: 38px;
+    height: 38px;
+  }
 }
 @media(max-width: 440px){
   .products__item {
@@ -492,6 +549,9 @@
   .gallery__item:nth-child(1) img, .gallery__item:nth-child(3) img, .gallery__item:nth-child(5) img {
     margin: -15px 0 0 -100px;
   }
+  .footer__social-item + .footer__social-item {
+    margin-left: 5px;
+  }
 }
 @media(max-width: 390px){
   .header-bottom__textarea-title {
@@ -506,6 +566,10 @@
   .partners__item {
     width: 290px;
     height: 290px;
+  }
+  .footer-bottom__list {
+    float: none;
+
   }
 }
 @media(max-width: 370px){
@@ -548,6 +612,29 @@
   .gallery__item:nth-child(1) img, .gallery__item:nth-child(3) img, .gallery__item:nth-child(5) img {
     margin: -30px 0 0 -120px;
   }
+  .footer-top__block-title {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  .footer-bottom__list {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-top__block-down {
+    margin-top: 20px;
+  }
+  .footer__social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__social-item{
+    display: block;
+    & + & {
+      margin-top: 10px;
+    }
+  }
 }
 @media(max-width: 350px){
   .header-bottom__textarea-title {
@@ -566,5 +653,14 @@
   }
   .products__banner img {
     height: 290px;
+  }
+  .footer-top__inner {
+    padding: 0;
+  }
+  .footer-bottom__item + .footer-bottom__item {
+    margin-left: 13px;
+  }
+  .footer-bottom {
+    padding: 30px 0 50px;
   }
 }
