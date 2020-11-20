@@ -173,6 +173,9 @@
   padding: 23px 26px 23px 20px;
 }
 /*end header*/
+.header__section-btn__flip.header__flip{
+  display: none;
+}
 .menu.header-top__section.mobile-version{
   display: none;
 }
@@ -355,6 +358,7 @@
     position: relative;
     padding-top: 40px;
     transition: all .3s;
+    z-index: 5;
     &:nth-child(1),
     &:nth-child(2),
     &:nth-child(3),
